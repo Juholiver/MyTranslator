@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradutor</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Tradutor de Texto</h1>
+        <div id="status" class="status"></div>
+        <textarea class="inputText" id="inputText" rows="10" cols="50" placeholder="Digite o texto aqui..."></textarea>
+        <select class="languageSelect" name="language" id="languageSelect">
+            <option value="en">Inglês</option>
+            <option value="es">Espanhol</option>
+            <option value="fr">Francês</option>
+            <option value="de">Alemão</option>
+            <option value="it">Italiano</option>
+        </select>
+        <div class="buttons-container">
+            <button class="buttonTraduzir">
+                <i class="fa-solid fa-language"></i>
+                Traduzir
+            </button>
+            <button class="buttonFalar">
+                <i class="fa-solid fa-microphone"></i>
+                Falar e Traduzir
+            </button>
+            <button class="buttonOuvir">
+                <i class="fa-solid fa-volume-high"></i>
+                Ouvir
+            </button>
+        </div>
+        <textarea class="outputText" id="outputText" rows="10" cols="50" placeholder="Tradução aparecerá aqui..." readonly></textarea>
+    </div>
+</body>
+<script src="./src/script.js"></script>
+</html>
